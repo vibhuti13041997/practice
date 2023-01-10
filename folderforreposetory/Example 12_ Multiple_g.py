@@ -30,5 +30,6 @@ class Sub(Base1,Base2):
 s1 = Sub()
 s1.disp2()  
 s1.disp3()
+s1.disp3()
 
 
