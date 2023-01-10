@@ -6,12 +6,12 @@ jobs:
   deploy:
     name: Push to EC2 Instance
     runs-on: ubuntu-latest
-    
+
     steps:
-      - name: checkout the code
+      - name: Checkout the code
         uses: actions/checkout@v3
-        
-      - name: Deploy to my EC2 Instance
+
+      - name: Deploy to my EC2 instance
         uses: easingthemes/ssh-deploy@v2.1.5
         env:
           SSH_PRIVATE_KEY: ${{ secrets.EC2_SSH_KEY }}
